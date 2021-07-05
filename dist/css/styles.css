@@ -11007,7 +11007,7 @@ html {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 25rem;
 }
 
 @media (min-width: 992px) {
@@ -11081,9 +11081,22 @@ html {
 
 /*-----------------*/
 
-.yawaaa {
-  margin-bottom: -18rem;
+.logo-container {
+  margin-bottom: -28rem;
   position: relative;
   color: orange;
-  z-index: 1;
+  z-index: 11;
+}
+
+.buy-button {
+  color: white !important;
+  border-radius: .5rem;
+  border: dashed #1abc9c;
+  padding: 1% 5% .5% 5%;
+  background: #1abc9c;
+  text-decoration: none;
+}
+
+.buy-button:hover {
+  background: transparent;
 }
