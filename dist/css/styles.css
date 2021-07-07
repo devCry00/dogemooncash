@@ -11068,6 +11068,23 @@ html {
   }
 }
 
+@media (max-width: 518px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media (max-width: 378px) {
+  .page-section .page-section-heading {
+    font-size: 5vw;
+  }
+
+  .contract-address {
+    font-size: 3vw;
+  }
+}
+
+
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -11088,15 +11105,16 @@ html {
   z-index: 11;
 }
 
-.buy-button {
+.custom-button {
   color: white !important;
   border-radius: .5rem;
   border: dashed #1abc9c;
   padding: 1% 5% .5% 5%;
+  margin: 0 .5rem;
   background: #1abc9c;
   text-decoration: none;
 }
 
-.buy-button:hover {
+.custom-button:hover {
   background: transparent;
 }
