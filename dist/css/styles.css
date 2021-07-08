@@ -10923,6 +10923,7 @@ html {
   padding-bottom: 1rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
+  transition: .7s !important;
 }
 #mainNav .navbar-brand {
   color: #fff;
@@ -11072,6 +11073,14 @@ html {
   .navbar-brand {
     display: none;
   }
+
+  .tokenomic-img {
+    height: auto !important;
+  }
+
+  .roadmap-img {
+    height: auto !important;
+  }
 }
 
 @media (max-width: 378px) {
@@ -11109,7 +11118,7 @@ html {
   color: white !important;
   border-radius: .5rem;
   border: dashed #1abc9c;
-  padding: 1% 5% .5% 5%;
+  padding: 3% 5% .5% 5%;
   margin: 0 .5rem;
   background: #1abc9c;
   text-decoration: none;
@@ -11117,4 +11126,39 @@ html {
 
 .custom-button:hover {
   background: transparent;
+  text-decoration: none;
+}
+
+.nav-up {
+  transform: translate(0, 0) !important;
+}
+
+.nav-down {
+  transform: translate(0, -100%) !important;
+}
+
+.know-more-doge {
+  animation: move_doge 10s ease-in-out infinite;
+}
+
+@keyframes move_doge {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.tokenomic-img {
+  height: 100vh;
+}
+
+.roadmap-img {
+  height: 80vh; 
 }
